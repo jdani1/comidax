@@ -292,7 +292,7 @@ footer .social-icons a {
 }
 /* ---------final ------------- */
 .footer {
-  background-color: #c65e2e;
+  background-color: #3f3f3f;
   color: #ffffff;
     height: 300px;
   padding-bottom: 1rem;
@@ -303,9 +303,8 @@ footer .social-icons a {
   text-decoration: none;
 }
 .footer a:hover {
-  color: #343a40;
+  color: #c69c2e;
   text-decoration: none;
-  dasda
 }
 .footer .section-title {
   text-transform: uppercase;
@@ -328,15 +327,16 @@ footer .social-icons a {
   color: #ffffff;
 }
 .footer .social-icons a:hover {
-  color: #343a40;
+  color: #c69c2e;
 }
 .footer .contact-info i {
   margin-right: 1rem;
 }
 .footer .copyright {
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: #c69c2e;
   padding: 1rem 0;
   text-align: center;
+  
 }
 .container {
 
