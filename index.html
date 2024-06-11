@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doña Cucha - Pollo a la Brasa</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        .show {display: block !important;}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+        <div class="logo_principal">
+        <a href="index.html"> <img class="img-logo" src="images/image-384x62.png" alt="Logo Doña Cucha"></a>
+     </div>
+            <div class="nav-content">
+                <div class="menu-wrapper">
+                    <ul class="menu-ul">
+                        <li class="menu-li"><a class="menu-a" href="index.html">Menú</a></li>
+                        <li class="menu-li">
+                            <a href="#" class="dropbtn" onclick="toggleDropdown(event)">Pide Aquí</a>
+                            <div class="dropdown-content">
+                                <a href="#">Opción 1</a>
+                                <a href="#">Opción 2</a>
+                                <a href="#">Opción 3</a>
+                            </div>
+                        </li>
+                        <li class="menu-li"><a class="menu-a" href="menu_01.html">Carta</a></li>
+                        <li class="menu-li"><a class="menu-a" href="#about">About</a></li>
+                    </ul>
+             
+        </nav>
+        <img src="images/imagen_inicio.jpg" alt="Imagen de Inicio" class="background-image">
+        <div class="header-content">
+            <img src="images/logo_centrado.png" alt="Doña Cucha Logo" class="logo">
+            <div class="centered-content">
+                <a href="#" class="order-button">PIDE AQUÍ</a>
+                <div class="social-icons">
+                    <a href="#"><img src="images/icons8-facebook-50.png" alt="Facebook"></a>
+                    <a href="#"><img src="images/icons8-instagram-50.png" alt="Instagram"></a>
+                    <a href="#"><img src="images/icons8-gmail-nuevo-50.png" alt="Twitter"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="intro">
+        <img src="images/logo_cocina_peruana.png" alt="Logo Cocina Peruana">
+        <div class="contenido">
+            <h2>COCINA PERUANA</h2>
+            <h4>Gran comida en un gran lugar</h4>
+            <p>Queremos ofrecer un poco de Perú a nuestros clientes, nuestro plato bandera es el rico pollo a la brasa,
+                 con sus papitas crocantes y todas sus cremas, para chuparse los dedos.</p>
+            <p>También queremos que disfruten de otros platos representativos de nuestra tierra como es el ceviche, el lomo saltado o jalea.</p>
+            <p>Nos pueden visitar en la calle Benjamín Palencia 43</p>   
+        </div>
+    </section>
+  
+    <section class="promos">
+        <h2>PROMOS DELIVERY</h2>
+        <div class="promo-images">
+            <div class="contenido1">
+            <img src="images/promo1.jpg" alt="Promo 1">
+                <h2>COMBO CAMPEÓN</h2>
+                <p>Rico pollo a la brasa acompañado de patatas fritas,
+                     ensalada y crema de huacatay y rocoto.</p>
+                     <a href="#" class="order-button-promociones">PIDE AQUÍ</a>
+            </div>
+
+            <div class="contenido1">
+            <img src="images/promo2.jpg" alt="Promo 2">
+                <h2>COMBO JARANA</h2>
+                <p>Pollo a la brasa con patatas fritas, ensalada, arroz chaufa,
+                     cremas y una bebida de 2L (Coca-cola o Fanta Naranja)</p>
+                     <a href="#" class="order-button-promociones">PIDE AQUÍ</a>
+            </div>
+
+            <div class="contenido1">
+            <img src="images/promo3.jpg" alt="Promo 3">
+                <h2>COMBO CARRETILLERO</h2>  
+                <p>Anticuchos, rachi y papa a la  efewfewfewffwfewffwefwf</p>
+                <a href="#" class="order-button-promociones">PIDE AQUÍ</a>
+            </div>
+        </div>  
+    </section>
+
+    <script>
+        function toggleDropdown(event) {
+            event.preventDefault();
+            event.target.nextElementSibling.classList.toggle("show");
+        }
+
+        // Para cerrar el dropdown si el usuario hace click fuera de él
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+    <footer class="footer text-muted">
+       
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+         
+        </section>
+       
+        <section>
+          <div class="container">
+        
+            <div class="row mt-3">
+             
+              <div>
+             
+                <h4  class="section-title">PEDIDO DELIVERY O TAKE AWAY</h4>
+                <p><a href="#" class="text-reset">Comprueba la llegada en tu código postal.</a></p>
+                <p><a href="#" class="text-reset">También puedes acercarte y recoger en Doña Cucha.
+              </a></p>
+                <p><a href="#" class="text-reset">Realiza tu pago.
+              </a></p>
+              </div>
+           
+              <div>
+                
+                <h4 class="section-title">PEDIDOS TAMBIÉN EN:</h4>
+                <p><a href="#" class="text-reset">UBER EATS</a></p>
+                <p><a href="#" class="text-reset">GLOVO</a></p>
+                <p><a href="#" class="text-reset">JUST EAT
+              </a></p>
+              </div>
+
+              <div>
+                
+                <h4 class="section-title">ATENCIÓN LOCAL</h4>
+                <p class="contact-info"><i class="fas fa-home me-3"></i> Calle Bergantin Pedrero 42, 28028 Madrid</p>
+                <p class="contact-info"><i class="fas fa-envelope me-3"></i> info@example.com</p>
+                <p class="contact-info"><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+                <p class="contact-info"><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+              </div>
+              
+            </div>
+            
+         
+        
+      
+      
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-google"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+         
+           
+          </div>
+      
+        <div class="copyright">
+        
+          <a class="text-reset fw-bold" href="https://mdbootstrap.com/">© 2023 Doña Cucha. Todos los derechos reservados.</a>
+        </div>
+    </div>
+    </section>
+      </footer>
+</body>
+</html>
